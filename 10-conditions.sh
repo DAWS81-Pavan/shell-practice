@@ -1,8 +1,8 @@
 #!/bin/bash
 
-number=$1
+number=18
 
-if [ $number -gt 20]
+if [ $number -gt 20 ]
 then
     echo "given number:$number is greter than 20"
 else
