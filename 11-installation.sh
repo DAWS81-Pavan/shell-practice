@@ -38,5 +38,5 @@ if [ $? -ne 0 ]
         echo "mysql installation is success"
     fi
 else
-    else "mysql is already installed, nothing to do.."
+    echo "mysql is already installed, nothing to do.."
 fi
