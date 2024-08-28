@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 R="\e[31m"
-G="\e[32m"
+G="\e[32m\e[0m"
 N="\e[0m"
 
 CHECK_ROOT(){
@@ -21,7 +21,7 @@ VALIDATE(){
         echo -e "$2 is...$R FAILED $N"
         exit 1
     else
-        echo -e "$2 is...$G SUCCESS $N"
+        echo -e "$2 is...$G SUCCESS"
     fi
 }
 
