@@ -21,7 +21,7 @@ fi
         echo "Git installation is success"
     fi
 else
-    else "Git is already installed, nothing to do.."
+    echo "Git is already installed, nothing to do.."
 fi
 
 dnf list installed mysql
