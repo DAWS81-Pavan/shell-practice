@@ -33,7 +33,7 @@ then
     exit 1
 fi
 
-dnf list installed git # Just checking whether installed or not
+dnf list installed mysql # Just checking whether installed or not
 
 if [ $? -ne 0 ]
 then
