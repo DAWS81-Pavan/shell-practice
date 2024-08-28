@@ -1,6 +1,7 @@
 #!/bin/bash
 
 userid=$(id -u)
+
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
@@ -16,6 +17,7 @@ CHECK_ROOT(){
 }
 
 VALIDATE(){
+
     if [ $1 -ne 0 ]
     then
         echo -e "$2 is...$R FAILED $N"
