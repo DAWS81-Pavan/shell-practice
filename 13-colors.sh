@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 R="\e[32mSUCCESS\e[0m"
-G="\e[32m\e[0m"
+G="\e[32mSUCCESS\e[0m"
 N="\e[0m\e[0m"
 
 CHECK_ROOT(){
