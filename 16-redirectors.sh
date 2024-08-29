@@ -10,6 +10,7 @@ userid=$(id -u)
 R="\e[31m" #RED
 G="\e[32m" #GREEN
 N="\e[0m"  #NARMAL
+Y="\e[33m"
 
 CHECK_ROOT(){
 
@@ -42,6 +43,6 @@ do
         dnf install $package -y &>>$LOG_FILE
         VALIDATE $? "installing $package"
     else
-        echo "$package is already installed, nothing to do.." &>>$LOG_FILE
+        echo -e "$package is already $Y installed, nothing to do..$N " &>>$LOG_FILE
     fi
 done
