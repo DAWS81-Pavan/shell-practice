@@ -39,7 +39,6 @@ do
         echo "$package is already installed, nothing to do.."
     fi
 done
-
 # dnf list installed git
 
 #  if [ $? -ne 0 ]
