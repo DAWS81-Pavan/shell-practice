@@ -5,7 +5,7 @@ do
     echo $i
 done
 
-for i in {pavan babu chinna nani chintu laddu kutty vikky}
+for i in {"pavan babu chinna nani chintu laddu kutty vikky"}
 do
     echo $i
 done
