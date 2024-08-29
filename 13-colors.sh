@@ -1,9 +1,9 @@
 #!/bin/bash
 
 userid=$(id -u)
-R="\e[31m"
-G="\e[32m"
-N="\e[0m"
+R="\e[31m" #RED
+G="\e[32m" #GREEN
+N="\e[0m"  #NARMAL
 
 CHECK_ROOT(){
 
