@@ -11,6 +11,6 @@
 
 numbers=("1" "2" "3") #Array
 
-echo "first number is ${number[0]}"
-echo "first number is ${number[1]}"
-echo "first number is ${number[2]}"
+echo "first number is ${numbers[0]}"
+echo "first number is ${numbers[1]}"
+echo "first number is ${numbers[2]}"
