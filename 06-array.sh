@@ -9,7 +9,7 @@
 
 # echo "Third fruit is: ${FRUITS[@]}"
 
-numbers=("1" "2" "3") #Array
+numbers=("$1" "$2" "$3") #Array
 
 echo "first number is ${numbers[0]}"
 echo "first number is ${numbers[1]}"
