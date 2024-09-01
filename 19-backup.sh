@@ -17,3 +17,8 @@ if [ $# -lt 2 ]
 then
     USAGE
 fi
+
+if [ -d $OURCE_DIR ]
+then
+    echo "$SOURCE_DIR does not exist...Please check"
+fi
