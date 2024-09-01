@@ -26,6 +26,6 @@ fi
 if [ ! -d $OURCE_DIR ]
 then
     echo "$SOURCE_DIR does not exist...Please check"
-# else
-#     echo "$SOURCE_DIR is exists"
+else
+    echo "$SOURCE_DIR is exists"
 fi
