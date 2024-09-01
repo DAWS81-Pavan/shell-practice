@@ -36,4 +36,10 @@ FILES=$( find ${SOURCE_DIR} -name "*.log" -mtime +14 )
 
 echo "files: $FILES"
 
+if [ $FILES ]
+then
+    echo "file are found"
+else
+    echo "files are not found"
+fi
 
