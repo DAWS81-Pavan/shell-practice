@@ -18,14 +18,14 @@ then
     USAGE
 fi
 
+# if [ ! -d $OURCE_DIR ]
+# then
+#     echo "$SOURCE_DIR does not exist...Please check"
+# fi
+
 if [ ! -d $OURCE_DIR ]
 then
     echo "$SOURCE_DIR does not exist...Please check"
+# else
+#     echo "$SOURCE_DIR is exists"
 fi
-
-# if [ -d $OURCE_DIR ]
-# then
-#     echo "$SOURCE_DIR does not exist...Please check"
-# # else
-# #     echo "$SOURCE_DIR is exists"
-# fi
