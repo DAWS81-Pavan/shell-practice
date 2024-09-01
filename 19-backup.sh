@@ -36,10 +36,10 @@ FILES=$( find $SOURCE_DIR -name "*.log" -mtime +14 )
 
 echo "files: $FILES"
 
-if [ -f $FILES ]
+if [ -z $FILES ]
 then
-    echo "files are found $DAYS"
+    echo "files are found"
 else
-    echo "file are not found $DAYS"
+    echo "No files older than $DAYS"
 fi
 
