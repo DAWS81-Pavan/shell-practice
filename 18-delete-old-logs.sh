@@ -13,10 +13,13 @@ else
     echo " $SOURCE_DIR is not $R exists $N"
 fi
 
-files=$( find $SOURCE_DIR -name "*.log" -mtime +14)
-echo files is $files
+FILE=$( find $SOURCE_DIR -name "*.log" -mtime +14)
+echo files is $FILE
 
-# while IFS= read -r file
+while IFS= read -r file
+do
+    echo "Deleting file: $file""
+done <<< $FILE
 
 # if [ -d $SOURCE_DIR ]
 # then
