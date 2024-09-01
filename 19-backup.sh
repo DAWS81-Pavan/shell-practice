@@ -2,7 +2,7 @@
 
 SOURCE_DIR=$1
 DEST_DIR=$2
-DAYS=${3:-14}
+
 
 R="\e[31m" #RED
 G="\e[32m" #GREEN
