@@ -19,6 +19,7 @@ echo files is $FILE
 while IFS= read -r file
 do
     echo "Deleting file: $file"
+    rm -rf $file
 done <<< $FILE
 
 # if [ -d $SOURCE_DIR ]
