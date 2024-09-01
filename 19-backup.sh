@@ -2,44 +2,42 @@
 
 SOURCE_DIR=$1
 DEST_DIR=$2
-DAYS=${3:-14}
+DAYS=${3:-14} #if $3 is empty, default is 14 days.
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+Y="\e[33m"
 
-R="\e[31m" #RED
-G="\e[32m" #GREEN
-N="\e[0m"  #NARMAL
-Y="\e[33m" #YELLOW
-
-USAGE (){
+USAGE(){
     echo -e "$R USAGE:: $N sh 19-backup.sh <source> <destination> <days(optional)>"
 }
+#check the source and destination are provided
 
 if [ $# -lt 2 ]
 then
     USAGE
+    exit 1
 fi
 
 if [ ! -d $SOURCE_DIR ]
 then
     echo "$SOURCE_DIR does not exist...Please check"
-    exit 1
 fi
 
 if [ ! -d $DEST_DIR ]
 then
     echo "$DEST_DIR does not exist...Please check"
-    exit 1
 fi
 
-FILES=$( find ${SOURCE_DIR} -name "*.log" -mtime +14 )
+FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +14)
 
-echo "files: $FILES"
+echo "Files: $FILES"
 
-if [ ! -z $FILES ]
+if [ ! -z $FILES ] #true if FILES is empty, ! nakes it expression false
 then
-    echo "file are found"
+    echo "Files are found"
 else
-    echo "files are not found"
+    echo "No files older than $DAYS"
 fi
-
