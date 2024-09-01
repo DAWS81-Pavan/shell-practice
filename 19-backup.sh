@@ -39,7 +39,8 @@ echo "files: $FILES"
 if [ ! -z $FILES ]
 then
     echo "files are found"
+    exit 1
 else
-    echo "files are not found older then $DAYS"
+    echo "files are not found older than $DAYS"
 fi
 
