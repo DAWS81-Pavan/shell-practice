@@ -18,7 +18,7 @@ then
     USAGE
 fi
 
-if [ -d $OURCE_DIR ]
+if [ ! -d $OURCE_DIR ]
 then
     echo "$SOURCE_DIR does not exist...Please check"
 fi
