@@ -13,6 +13,11 @@ else
     echo " $SOURCE_DIR is not $R exists $N"
 fi
 
+files=$( find $SOURCE_DIR -name "*.log" -mtime +14)
+echo files is $files
+
+# while IFS= read -r file
+
 # if [ -d $SOURCE_DIR ]
 # then
 #     echo -e " $R $SOURCE_DIR $N exists "
