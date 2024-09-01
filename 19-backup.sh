@@ -2,6 +2,8 @@
 
 SOURCE_DIR=$1
 DEST_DIR=$2
+DAYS=${3:-14}
+TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 
 
 R="\e[31m" #RED
@@ -33,4 +35,11 @@ fi
 FILES=$( find $SOURCE_DIR -name "*.log" -mtime +14 )
 
 echo "files: $FILES"
+
+if [ -f $FILES ]
+then
+    echo "files are found $DAYS"
+else
+    echo "file are not found $DAYS"
+fi
 
