@@ -18,7 +18,7 @@ then
     USAGE
 fi
 
-if [ -d $OURCE_DIR ]
+if [ -d $SOURCE_DIR ]
 then
     echo "$SOURCE_DIR exist"
 else
