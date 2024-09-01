@@ -1,5 +1,5 @@
-number1=$1
-number2=$2
+number1=$1  #2
+number2=$2  #5
 
 sum=$(($number1+$number2))
 

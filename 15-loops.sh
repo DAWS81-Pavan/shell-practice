@@ -1,10 +1,10 @@
 #!/bin/bash
 
-userid=$(id -u)
 R="\e[31m" #RED
 G="\e[32m" #GREEN
 N="\e[0m"  #NARMAL
 
+userid=$(id -u)
 CHECK_ROOT(){
 
     if [ $userid -ne 0 ]
