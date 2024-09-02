@@ -32,3 +32,6 @@ then
 else
     echo -e " $SOURCE_DIR $G exits $N"
 fi
+
+FILES=$( find $SOURCE_DIR -name "*.log" -mtime +14)
+echo "files: $FILES "
