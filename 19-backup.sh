@@ -38,7 +38,7 @@ echo "files: $FILES "
 
 if [ ! -z $FILES ]
 then 
-    echo "files are found"
+    echo "files are $G found $N"
 else
-    echo "files are not found"
+    echo "files are $R not found $N"
 fi
