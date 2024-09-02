@@ -11,6 +11,7 @@ Y="\e[33m" #YELLOW
 
 USAGE (){
     echo -e " Please provide $R 19-backup.sh <source><destination> $N"
+    exit 1
 }
 
 if [ $# -lt 2 ]
