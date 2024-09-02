@@ -49,7 +49,7 @@ then
         while IFS= read -r file
         do
             echo "Deleting file: $file"
-
+            rm -rf $file
         done <<< $FILES
     else
         echo -e "Zipping the files is $R failed $N"
