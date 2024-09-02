@@ -21,6 +21,8 @@ fi
 if [ ! -d $SOURCE_DIR ]
 then
     echo " $SOURCE_DIR not exits"
+else
+    echo " $SOURCE_DIR exits"
 fi
 
 if [ ! -d $DEST_DIR ]
