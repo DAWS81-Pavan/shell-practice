@@ -20,14 +20,14 @@ fi
 
 if [ ! -d $SOURCE_DIR ]
 then
-    echo " $SOURCE_DIR not exits"
+    echo " $SOURCE_DIR not $R exits $N"
 else
-    echo " $SOURCE_DIR exits"
+    echo " $SOURCE_DIR $G exits $N"
 fi
 
 if [ ! -d $DEST_DIR ]
 then
-    echo " $DEST_DIR not exits"
+    echo " $DEST_DIR not $R exits $N"
 else
-    echo " $SOURCE_DIR exits"
+    echo " $SOURCE_DIR $G exits $N"
 fi
