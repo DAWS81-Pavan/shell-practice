@@ -10,7 +10,7 @@ N="\e[0m"  #NARMAL
 Y="\e[33m" #YELLOW
 
 USAGE (){
-    echo " Please provide 19-backup.sh <source><destination>"
+    echo -e " Please provide $R 19-backup.sh <source><destination> $N"
 }
 
 if [ $# -lt 2 ]
