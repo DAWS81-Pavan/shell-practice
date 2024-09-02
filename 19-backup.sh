@@ -3,6 +3,7 @@
 SOURCE_DIR=$1
 DEST_DIR=$2
 DAYS=${3:-14}
+TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 
 R="\e[31m" #RED
 G="\e[32m" #GREEN
@@ -39,6 +40,25 @@ echo "files: $FILES "
 if [ ! -z "$FILES " ]
 then 
     echo -e "files are $G found $N"
+    ZIPFILE="$SOURCE_DIR/apps-log-$TIMESTAMP.zip"
+    find $SOURCE_DIR -name "*.log" -mtime +14 | zip "ZIPFILE" -@
+
+    if [ -f $ZIPFILE ]
+    then
+        echo "$G Successfully zippped files older than 14days $N"
+        while IFS= read files
+        do
+            echo "Deleting file: $file"
+
+        done <<< $FILES
+    else
+        echo "Zipping the files is $R failed $N"
+        exit 1
+    fi
 else
     echo -e "files are $R not found $N"
 fi
+
+# while IFS= read -r files
+# do
+#     echo " "
