@@ -40,7 +40,7 @@ echo "files: $FILES "
 if [ ! -z "$FILES " ]
 then 
     echo -e "files are $G found $N"
-    ZIPFILE="$SOURCE_DIR/apps-log-$TIMESTAMP.zip"
+    ZIPFILE="$DEST_DIR/apps-log-$TIMESTAMP.zip"
     find $SOURCE_DIR -name "*.log" -mtime +14 | zip "ZIPFILE" -@
 
     if [ -f $ZIPFILE ]
