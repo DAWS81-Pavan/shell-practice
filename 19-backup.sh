@@ -45,14 +45,14 @@ then
 
     if [ -f $ZIPFILE ]
     then
-        echo "$G Successfully zippped files older than 14days $N"
+        echo -e "$G Successfully zippped files older than 14days $N"
         while IFS= read files
         do
             echo "Deleting file: $file"
 
         done <<< $FILES
     else
-        echo "Zipping the files is $R failed $N"
+        echo -e "Zipping the files is $R failed $N"
         exit 1
     fi
 else
