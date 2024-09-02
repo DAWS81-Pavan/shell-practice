@@ -28,4 +28,6 @@ fi
 if [ ! -d $DEST_DIR ]
 then
     echo " $DEST_DIR not exits"
+else
+    echo " $SOURCE_DIR exits"
 fi
